@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
+    android:layout_height="match_parent"
+  
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+   
+   
+    
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/BSSID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="29dp"
-        android:text="Baha..." />
+        android:layout_alignTop="@+id/connect_btn"
+        android:layout_marginTop="77dp"
+        android:text="@string/bssid"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/ESSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/BSSID"
+        android:layout_below="@+id/BSSID"
+        android:text="@string/essid"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/IP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ESSID"
+        android:layout_below="@+id/ESSID"
+        android:text="@string/ip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/BSSID_Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ESSID"
+        android:layout_alignRight="@+id/connect_btn"
+        />
+
+    <TextView
+        android:id="@+id/ESSID_Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/IP"
+        android:layout_alignLeft="@+id/BSSID_Value"
+        />
+
+    <TextView
+        android:id="@+id/IP_Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/IP"
+        android:layout_alignBottom="@+id/IP"
+        android:layout_alignLeft="@+id/ESSID_Value"
+        />
+
+    <Button
+        android:id="@+id/connect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="163dp"
+        android:text="@string/boutton_name" />
 
 </RelativeLayout>
