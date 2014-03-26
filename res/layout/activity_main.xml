@@ -4,12 +4,14 @@
     android:layout_height="match_parent" >
 
     <ImageView
-        android:id="@+id/Welcome"
+        android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:scaleType="fitXY"
-        android:src="@drawable/welcome" />
+        android:src="@drawable/wel" />
 
     <TextView
         android:id="@+id/textView1"

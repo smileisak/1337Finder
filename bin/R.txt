@@ -227,8 +227,7 @@ int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable ic_launcher 0x7f020057
-int drawable welcome 0x7f020058
-int id Welcome 0x7f05003c
+int drawable wel 0x7f020058
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -291,6 +290,7 @@ int id title 0x7f05002b
 int id top_action_bar 0x7f050020
 int id up 0x7f050021
 int id useLogo 0x7f050003
+int id welcome 0x7f05003c
 int id withText 0x7f05000c
 int integer abc_max_action_buttons 0x7f090000
 int layout abc_action_bar_decor 0x7f030000
