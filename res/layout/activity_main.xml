@@ -3,22 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-  <ImageView
-      android:id="@+id/Welcome"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerInParent="true"
-      android:src="@drawable/welcome"
-      android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/welcome" />
 
-  <TextView
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:textSize="12sp"
-        android:textColor="#454545"
-        android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:text="AndroidScanner" />  
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="38dp"
+        android:gravity="center_horizontal"
+        android:text="1337Finder"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
